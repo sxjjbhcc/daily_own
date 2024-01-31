@@ -37,7 +37,7 @@ def get_birthday():
   return (next - today).days
 
 def get_words():
-  words = requests.get("https://api.yixiangzhilv.com/yiyan/sentence/")
+  words = requests.get("https://api.shadiao.pro/du")
   return words.json()['content']
 
 def get_random_color():
