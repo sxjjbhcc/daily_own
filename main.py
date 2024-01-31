@@ -38,7 +38,7 @@ def get_birthday():
 
 def get_words():
   words = requests.get("https://api.shadiao.pro/du")
-  return words.json()['content']
+  return words.json()['data']
 
 def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
